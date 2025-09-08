@@ -1,0 +1,85 @@
+:root {
+    --background-c: #262221;
+    --content-c: #A69590;
+    --content-s: 1.1rem;
+    --title-c: #EDE7E6;
+    --title-s: 1.6rem;
+    --button-c: #FFF7D8;
+    --button-text-c: var(--background-c);
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/contato-header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 6px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title-c);
+}
+
+header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+section {
+    background-color: var(--background-c);
+    color: var(--content-c);
+    font-size: var(--content-s);
+}
+
+section h3 {
+    color: var(--title-c);
+    font-size: var(--title-s);
+}
+
+#content-title {
+    font-size: 1.8rem;
+}
+
+#content {
+    margin-bottom: 35vh;
+}
+
+.address a, .address .items{
+    color: var(--content-c) !important;
+    transition: all .2s ease-in;
+}
+
+.address .items:hover a, .address .items:hover{
+    color: var(--title-c) !important;
+}
+
+
+#line-section {
+    transform: translateY(5vh);
+    margin-bottom: 28vh;
+    /* margin-left: 1px !important; */
+    /* width: 90%; */
+    /* height: 2px; */
+    background-color: var(--button-c);
+}
+
+
+.title-day {
+    color:var(--title-c);
+}
+
+@media only screen and (min-width: 800px) {
+    #image img {
+        height: 90vh;
+        width: 100vw !important;
+        filter: brightness(90%);
+    }
+    #line-hours {
+        margin-left: 2vh !important;
+        margin-top: 30vh !important;
+        /* width: 90%; */
+        /* height: 2px; */
+    }
+}
+

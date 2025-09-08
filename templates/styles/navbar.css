@@ -1,0 +1,88 @@
+:root {
+    --background-c: #262221;
+    --content-c: #A69590;
+    --content-s: 1.1rem;
+    --title-c: #EDE7E6;
+    --title-s: 1.6rem;
+    --button-c: #FFF7D8;
+    --button-text-c: var(--background-c);
+}
+
+p,
+span {
+    cursor: default;
+}
+
+/* Barra de Navegação */
+.navbar {
+    transition: all .3s ease-in-out;
+    background-color: var(--background-c);
+}
+
+.navbar-toggler-icon {
+    background-image:
+        url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 247, 216, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+    border-color: var(--button-c) !important;
+}
+
+nav.navbar.background-true {
+    background-color: var(--background-c);
+
+}
+
+a#navbar-logo {
+    background-image: url("../images/Logo_Reduzido_Off_White-removebg-preview.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: darken;
+    width: 12em;
+    height: 2.5em;
+}
+
+.nav-item .nav-link {
+    color: var(--button-c) !important;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 3px;
+    font-size: 1.2rem;
+    transition: .2s ease-in-out;
+}
+
+.nav-item:hover .nav-link {
+    color: var(--title-c) !important;
+}
+
+.nav-item a.nav-link.active {
+    color: #fff !important;
+    word-spacing: 1px;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    background-color: var(--background-c) !important;
+}
+
+.dropdown-menu .dropdown-item {
+    color: var(--button-c) !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #342f2f;
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #262123;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #a695904d;
+    border-radius: 20px;
+}

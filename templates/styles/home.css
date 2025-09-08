@@ -1,0 +1,279 @@
+
+:root {
+    --background-c: #262221;
+    --content-c: #A69590;
+    --content-s: 1.1rem;
+    --title-c: #EDE7E6;
+    --title-s: 1.6rem;
+    --button-c: #FFF7D8;
+    --button-text-c: var(--background-c);
+}
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #262123;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #a695904d;
+    border-radius: 20px;
+}
+
+p, span {
+    cursor: default;
+}
+
+/* Barra de Navegação */
+.navbar {
+    transition: all .3s ease-in-out;
+}
+
+.navbar-toggler-icon {
+    background-image: 
+        url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 247, 216, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+    border-color: var(--button-c) !important;
+} 
+
+nav.navbar.background-true {
+    background-color: var(--background-c);
+    
+}
+
+a#navbar-logo {
+    background-image: url("../images/Logo_Reduzido_Off_White-removebg-preview.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: darken;
+    width: 12em;
+    height: 2.5em;
+}
+
+.nav-item .nav-link {
+    color: var(--button-c) !important;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 3px;
+    font-size: 1.2rem;
+    transition: .2s ease-in-out;
+}
+
+.nav-item:hover .nav-link {
+    color: var(--title-c) !important;
+}
+
+.nav-item a.nav-link.active {
+    color: #fff !important;
+    word-spacing: 1px;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    background-color: var(--background-c) !important;
+}
+
+.dropdown-menu .dropdown-item {
+    color: var(--button-c) !important;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #342f2f;
+}
+
+/* Cabeçalho */
+header {
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+        url("../images/home_header-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    text-shadow: rgba(0, 0, 0, 0.6) 0 0 5px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title-c);
+}
+
+header #btn-pre-budget {
+    border: none;
+    border-radius: 1px;
+    word-spacing: 2px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--button-text-c);
+    background-color: var(--button-c);
+}
+#btn-pre-budget:hover {
+    background-color: #D4CEB5;
+}
+#btn-pre-budget:active {
+    transform: scale(0.95);
+    background-color: #D4CEB5 !important;
+}
+
+
+#whatsapp-btn-container {
+    transform: translateY(-8px) !important;
+    z-index: 5;
+}
+
+#whatsapp-btn-container div {
+    background-color: #00BF63;
+    cursor: pointer;
+}
+
+
+/* Sessão/ Corpo da Página Home */
+section {
+    background-color: var(--background-c);
+}
+
+
+/* Produtos */
+section #products {
+    background-color: var(--background-c);
+    font-size: var(--content-s);
+}
+
+#products p {
+    color: var(--content-c);
+    font-size: 1.2rem;
+}
+
+#products .title {
+    color: var(--title-c);
+    font-size: var(--title-s);
+}
+
+#products img {
+    /* height: 65vh; */
+    width: 100%;
+    cursor: pointer;
+    /* filter: brightness(80%); */
+}
+
+#products .img-hidden {
+    filter: brightness(80%);
+}
+
+#btn-next-img {
+    margin-top: 65%;
+    font-size: 60px;
+    /* display: none !important; */
+}
+
+#btn-next-img.btn-hidden {
+    display: none !important;
+}
+
+#products #more-products {
+    color: var(--button-c);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Sobre nós */
+section #about-us {
+    background-image: 
+        linear-gradient(.0deg, rgba(0, 0, 0, 0.65),rgba(0,0,0,0.8)), 
+        url("../images/living-room-2155376_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 30%;
+    background-size: cover;
+    /* height: 50vh; */
+    /* width: 1366px; */
+    font-weight: 600;
+}
+
+#about-us p {
+    color: var(--title-c);
+    font-size: var(--title-s);
+    text-shadow: rgba(0, 0, 0, 0.6) 0 0 5px;
+}
+
+#about-us #btn-about-us {
+    border: none;
+    border-radius: 1px;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--button-text-c);
+    background-color: var(--button-c);
+}
+#btn-about-us:hover {
+    background-color: #D4CEB5 !important;
+}
+#btn-about-us:active {
+    transform: scale(0.95);
+    background-color: #D4CEB5 !important;
+}
+
+
+/* Galeria de Fotos */
+#gallery h2{
+    font-size: var(--title-s);
+    color: var(--title-c);
+    margin-top: 15vh;
+}
+
+#gallery-images img {
+    max-height: 40vh;
+    width: 100%;
+}
+
+
+/* Rodapé */
+#footer {
+    background-color: #1B1919;
+    font-size: var(--content-s);
+    margin-top: 30vh;
+    z-index: 6;
+}
+
+ul.footer-list {
+    color: var(--content-c);
+    list-style-type: none;
+    cursor: default;
+}
+
+ul.footer-list li.list-title {
+    color: var(--title-c);
+    font-size: 1.28em;
+    margin-bottom: 2vh;
+    font-weight: 500;
+}
+
+#footer-line {
+    width: 95%;
+    height: 0.12rem;
+    background-color: var(--button-c);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer-tellphone, .footer-email {
+    color: var(--content-c);
+    font-size: var(--content-s);
+    cursor: default;
+}
+
+
+
+
+
+.line-2 {
+    width: 90%;
+    height: 2px;
+    background-color: var(--button-c);
+    margin-left: auto;
+    margin-right: auto;
+}

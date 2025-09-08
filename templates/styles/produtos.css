@@ -1,0 +1,266 @@
+:root {
+    --background-c: #262221;
+    --content-c: #A69590;
+    --content-s: 1.1rem;
+    --title-c: #EDE7E6;
+    --title-s: 1.6rem;
+    --button-c: #FFF7D8;
+    --button-text-c: var(--background-c);
+}
+
+body {
+    background-color: var(--background-c) !important;
+    overflow-x: hidden;
+}
+
+section {
+    color: var(--content-c);
+    font-size: var(--content-s);
+    height: 100vh;
+    background-color: var(--background-c);
+    padding-top: 10%;
+}
+
+
+/* Contúdo do Cabeçalho ---------------------------------------*/
+#content-header {
+    background-color: var(--background-c);
+}
+
+#content-header #btn-interest {
+    border: none;
+    border-radius: 1px;
+    word-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--button-text-c);
+    background-color: var(--button-c);
+}
+#content-header #btn-interest:hover {
+    background-color: #D4CEB5;
+}
+#content-header #btn-interest:active {
+    transform: scale(0.95);
+    background-color: #D4CEB5 !important;
+}
+
+#content-header h3 {
+    color: var(--title-c);
+    font-size: var(--title-s);
+}
+
+
+/* Outros Produtos -------------------------------------------- */
+#more-products {
+    background-color: var(--background-c);
+}
+
+.more-products-container {
+    background-color: var(--background-c);
+    margin-top: 36vh !important;
+}
+
+.more-products-container .btn {
+    border: none;
+    border-radius: 1px;
+    word-spacing: 2px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--button-text-c);
+    background-color: var(--button-c);
+}
+.btn span {
+    transform: translateY(5px);
+    cursor: pointer;
+}
+.more-products-container .btn:hover {
+    color: var(--button-text-c) !important;
+    background-color: #D4CEB5;
+}
+.more-products-container .btn:active {
+    transform: scale(0.95);
+    background-color: #D4CEB5 !important;
+}
+
+h3 {
+    font-size: var(--title-s);
+    color: var(--title-c);
+}
+
+#more-products #wallpaper {
+    position: relative;
+    background-image: url("../images/produto_papelParede.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+#more-products #wallpaper::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#more-products #persienne {
+    position: relative;
+    background-image: url("../images/produto_persianas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+#more-products #persienne::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#more-products #curtain {
+    position: relative;
+    background-image: url("../images/produto_cortinas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+#more-products #curtain::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#more-products .products-content {
+    position: relative;
+    font-size: var(--title-s);
+    text-shadow: rgba(0, 0, 0, 0.8) 0px 0px 6px;
+    z-index: 5;
+}
+
+
+/* Lista de Recomendações -------------------------- */
+#recomendations {
+    background-color: var(--background-c);
+    padding-top: 14vh !important;
+    padding-bottom: 28vh !important;
+}
+
+.list {
+    overflow-x: auto !important;
+    padding-bottom: 2vh !important;
+}
+
+.list .items {
+    position: relative;
+    /* background-image: url("../images/image04.png"); */
+    background-image: url("../images/prodCortinas-card-sala01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 90vh;
+    height: 80vh;
+    transition: all 2s ease-in-out;
+}
+
+.list .items::after{
+    content:"";
+    border-radius: 6px;
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+}
+.list .items:hover::after {
+    animation: darken .4s forwards .1s;
+}
+
+.list .items h3, .list .items p {
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 6px;
+}
+
+.items .item-title {
+    color: #fff;
+    font-size: var(--title-s);
+    /* background: rgba(0, 0, 0, 0.5); */
+    position: relative;
+    z-index: 5;
+}
+
+.list .items-text {
+    font-size: var(--content-s);
+    color: var(--title-c) !important;
+}
+
+.items .items-text.hidden {
+    display: none;
+    position: relative;
+    z-index: 5;
+}
+
+.items:hover .items-text.hidden, .items:hover .item-title {
+    display: block;
+    animation: show 6s forwards -3s;
+    background-color: transparent !important;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .list .items {
+        height: 90vh;
+    }
+}
+/* @media only screen and (min-width: 1020px) {
+    .list {
+        overflow-x: hidden !important;
+    }
+} */
+
+
+@keyframes darken {
+    0% {
+        background:rgba(0, 0, 0, 0);
+    }
+    100% {
+        background:rgba(20, 20, 20, 0.7);
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+.line-2 {
+    width: 90%;
+    height: 2px;
+    background-color: var(--button-c);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line-3 {
+    width: 70%;
+    height: 2px;
+    background-color: var(--button-c);
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,42 @@
+/* Rodapé */
+#footer {
+    background-color: #1B1919;
+    font-size: var(--content-s);
+    z-index: 6;
+}
+
+ul.footer-list {
+    color: var(--content-c);
+    list-style-type: none;
+    cursor: default;
+}
+
+ul.footer-list li.list-title {
+    color: var(--title-c);
+    font-size: 1.28em;
+    margin-bottom: 2vh;
+    font-weight: 500;
+}
+
+#footer-line {
+    width: 95%;
+    height: 0.12rem;
+    background-color: var(--button-c);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.footer-tellphone, .footer-email {
+    color: var(--content-c);
+    font-size: var(--content-s);
+    cursor: default;
+}
+
+.line-2 {
+    width: 90%;
+    height: 2px;
+    background-color: var(--button-c);
+    margin-left: auto;
+    margin-right: auto;
+}
