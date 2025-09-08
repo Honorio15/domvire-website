@@ -1,7 +1,5 @@
 # Domvirê - Website Institucional
 
-![Logo Domvirê](templates/images/Logo_Completo_off_white-removebg-preview.png)
-
 ## Descrição do Projeto
 Este é o **website institucional da Domvirê**, desenvolvido para apresentar a empresa, seus serviços e formas de contato de maneira moderna e responsiva.  
 O site substitui o antigo projeto da marca "Nobres", com identidade visual atualizada (cores, fontes e logotipo).
